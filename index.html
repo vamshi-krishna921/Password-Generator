@@ -5,15 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Strong Password Generator</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="container">
       <div class="up">
         <h1>GENERATE A STRONG PASSWORD</h1>
-        <input type="text" class="passDisplay"/>
+        <div class="both">
+          <input type="text" class="passDisplay" />
+          <i class="ri-file-copy-line"></i>
+        </div>
+        <p>Please select anyone format.</p>
         <div class="ranger">
           <input
             type="range"
@@ -36,15 +47,23 @@
       </div>
       <div class="down">
         <label for="upperCase">
-            <input type="checkbox" name="checkbox" id="options">Include Uppercase Letters (A-Z)
+          <input type="checkbox" class="option" id="uppercase" />Include
+          Uppercase Letters (A-Z)
         </label>
         <label for="lowerCase">
-            <input type="checkbox" name="checkbox" id="options">Include Lowercase Letters (a-z)
-        </label> <label for="numbers">
-            <input type="checkbox" name="checkbox" id="options">Include Numbers (0-9)
-        </label> <label for="symbols">
-            <input type="checkbox" name="checkbox" id="options">Include Symbols (@-$)
+          <input type="checkbox" class="option" id="lowercase" />Include
+          Lowercase Letters (a-z)
+        </label>
+        <label for="numbers">
+          <input type="checkbox" class="option" id="numbers" />Include Numbers
+          (0-9)
+        </label>
+        <label for="symbols">
+          <input type="checkbox" class="option" id="symbols" />Include Symbols
+          (@-$)
+        </label>
       </div>
+
       <button>GENERATE PASSWORD</button>
     </div>
     <script src="script.js"></script>
