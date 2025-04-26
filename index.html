@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Strong Password Generator</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <div class="up">
+        <h1>GENERATE A STRONG PASSWORD</h1>
+        <input type="text" class="passDisplay"/>
+        <div class="ranger">
+          <input
+            type="range"
+            name="range"
+            id="range"
+            min="1"
+            max="25"
+            value="8"
+            oninput="rangeValue.value = this.value"
+          />
+          <input
+            type="number"
+            name="number"
+            id="rangeValue"
+            min="1"
+            max="25"
+            value="8"
+          />
+        </div>
+      </div>
+      <div class="down">
+        <label for="upperCase">
+            <input type="checkbox" name="checkbox" id="options">Include Uppercase Letters (A-Z)
+        </label>
+        <label for="lowerCase">
+            <input type="checkbox" name="checkbox" id="options">Include Lowercase Letters (a-z)
+        </label> <label for="numbers">
+            <input type="checkbox" name="checkbox" id="options">Include Numbers (0-9)
+        </label> <label for="symbols">
+            <input type="checkbox" name="checkbox" id="options">Include Symbols (@-$)
+      </div>
+      <button>GENERATE PASSWORD</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,92 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+body {
+  width: 100dvw;
+  height: 100dvh;
+  background-color: rgb(0, 192, 250);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+}
+.container {
+  padding: max(1rem, 2%);
+  background-color: white;
+  border-radius: 16px;
+}
+.up {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+h1 {
+  font-size: clamp(1rem, 0.2rem + 1.5vw, 2rem);
+}
+input[type="text"] {
+  width: 100%;
+  padding: 20px;
+  background-color: rgb(73, 199, 237);
+  border-radius: 20px;
+  border: none;
+  text-align: center;
+  font-size: 18px;
+  outline: none;
+}
+.ranger {
+  width: 90%;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+input[type="range"] {
+  width: 90%;
+}
+input[type="number"] {
+  text-align: center;
+  font-size: 15px;
+  outline: none;
+  border: none;
+  width: 10%;
+}
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+.down {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: self-start;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+input[type="checkbox"] {
+  margin-inline: 10px;
+  width: 1rem;
+  aspect-ratio: 1;
+  vertical-align: center;
+}
+label {
+  font-size: 15px;
+  font-weight: 400;
+}
+button {
+  display: block;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 1.3px;
+  margin: 0 auto;
+  padding-inline: min(2rem, 5%);
+  padding-block: 18px;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  background-color: rgb(73, 199, 237);
+}
